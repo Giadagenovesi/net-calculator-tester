@@ -41,6 +41,37 @@ namespace CalculatorUnitTest
 
         }
 
+        [Test]
+        public void TestDivisione()
+        {
+            float e = 6.0f;
+            float f = 3.0f;
+
+            float aspettativa = 2.0f;
+
+            float risultatoDivisione = Calculator.Divisione(e, f);
+
+
+            Assert.AreEqual(aspettativa, risultatoDivisione);
+
+        }
+
+
+        [Test]
+        public void TestMoltiplicazione()
+        {
+            float i = 6.0f;
+            float l = 3.0f;
+
+            float aspettativa = 18.0f;
+
+            float risultatoMoltiplicazione = Calculator.Moltiplicazione(i, l);
+
+
+            Assert.AreEqual(aspettativa, risultatoMoltiplicazione);
+
+        }
+
     }
         
     
